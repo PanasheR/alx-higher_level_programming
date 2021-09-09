@@ -7,8 +7,8 @@ if __name__ == "__main__":
         print("{:d} arguments.".format(arguments))
     elif arguments == 1:
         print("{:d} argument:".format(arguments))
-        print("{:d}: {}".format(1, str(argv[1])))
+        print("{:d}: {}".format(1, argv[1]))
     else:
         print("{:d} arguments:".format(arguments))
         for i in range(1, len(argv)):
-            print("{:d}: {}".format(i, str(argv[i])))
+            print("{:d}: {}".format(i, argv[i]))
