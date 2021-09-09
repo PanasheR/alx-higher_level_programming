@@ -3,9 +3,9 @@ if __name__ == "__main__":
     from sys import argv
     arguments = len(argv) - 1
 
-    if arguments is 0:
+    if arguments == 0:
         print("{:d} arguments.".format(arguments))
-    elif arguments is 1:
+    elif arguments == 1:
         print("{:d} argument:".format(arguments))
         print("{:d}: {}".format(1, str(argv[1])))
     else:
