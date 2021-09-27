@@ -56,11 +56,21 @@ https://www.youtube.com/watch?v=7vbgD-3s-w4  Learn to Program 11 Static & Except
     list_length can be bigger than the length of both lists
     Returns a new list (length = list_length) with all divisions
     If 2 elements can’t be divided, the division result should be equal to 0
-    ** If an element is not an integer or float:
+    If an element is not an integer or float:
         print: wrong type
-    ** If the division can’t be done (/0):
+    If the division can’t be done (/0):
         print: division by 0
-    ** If my_list_1 or my_list_2 is too short
+    If my_list_1 or my_list_2 is too short
         print: out of range
     You have to use try: / except: / finally:
+    You are not allowed to import any module
+
+#5 Write a function that raises a type exception.
+
+    Prototype: def raise_exception():
+    You are not allowed to import any module
+    
+#6 Write a function that raises a name exception with a message.
+
+    Prototype: def raise_exception_msg(message=""):
     You are not allowed to import any module
