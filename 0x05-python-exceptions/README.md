@@ -57,10 +57,10 @@ https://www.youtube.com/watch?v=7vbgD-3s-w4  Learn to Program 11 Static & Except
     Returns a new list (length = list_length) with all divisions
     If 2 elements can’t be divided, the division result should be equal to 0
     If an element is not an integer or float:
-        -- print: wrong type
+        - print: wrong type
     If the division can’t be done (/0):
-        -- print: division by 0
+        - print: division by 0
     If my_list_1 or my_list_2 is too short
-        -- print: out of range
+        - print: out of range
     You have to use try: / except: / finally:
     You are not allowed to import any module
