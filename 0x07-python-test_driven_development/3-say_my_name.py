@@ -3,8 +3,8 @@
 
 """
 This is an example of the say_my_name function.
->>> say_my_name("John", "Smith")
-John Smith
+>>> say_my_name("Panashe", "Rusakaniko")
+Panashe Rusakaniko
 """
 
 
