@@ -1,0 +1,94 @@
+The ``0-add_integer`` module
+======================
+
+Using ``add``
+-------------------
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+Now use it:
+
+    >>> print(add_integer(1, 2))
+    3
+
+    >>> print(add_integer(1, 2+90))
+    93
+
+    >>> print(add_integer(9+1, 2+3.4))
+    15
+
+    >>> print(add_integer(100, -2))
+    98
+
+    >>> print(add_integer(2))
+    100
+
+    >>> print(add_integer(100.3, -2))
+    98
+
+    >>> print(add_integer(-100.3, -2))
+    -102
+
+    >>> print(add_integer(100, None))
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
+
+    >>> print(add_integer(4, "School"))
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
+
+    >>> print(add_integer(None))
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+    >>> print(add_integer("The", "School"))
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+    >>> print(add_integer("fail", 5))
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+    >>> print(add_integer("", 5))
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+    >>> print(add_integer(6, []))
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
+
+    >>> print(add_integer(6, [[]]))
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
+
+    >>> print(add_integer(None, None))
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+    >>> print(add_integer(7, "989898"))
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
+
+    >>> print(add_integer(float('nan'), 12))
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+    >>> print(add_integer(-float('inf'), 12))
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+    >>> print(add_integer(12, float('inf')))
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
