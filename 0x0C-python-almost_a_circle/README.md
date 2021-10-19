@@ -23,7 +23,7 @@ You will also learn about:
     Serialization/Deserialization
     JSON
 
-![chasing on tai](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/331/giphy.mp4)
+![chasing on tai](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/331/giphy.mp4?raw=true)
 
 ## Resources
 
