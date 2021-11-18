@@ -2,4 +2,4 @@
 SELECT cities.id, cities.name, states.name
 FROM cities c INNER JOIN states s
           ON c.states_id = s.id
-ORDER BY c.id;
+ORDER BY cities.id;
