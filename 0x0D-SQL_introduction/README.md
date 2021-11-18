@@ -1,5 +1,7 @@
 # 0x0D. SQL - Introduction
 
+![SQL can be confusing](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/272/rtcwz.jpg)
+
 ## Comments for your SQL file: 
 ```
 $ cat my_script.sql
