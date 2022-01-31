@@ -1,7 +1,7 @@
 #!/usr/bin/node
 const args = process.argv;
 if (isNaN(parseInt(args[2]))) {
-  console.log('Missing number of occurrences');
+  console.log('Missing size');
 } else {
   let i, j, string;
   for (i = 0; i < parseInt(args[2]); i++) {
