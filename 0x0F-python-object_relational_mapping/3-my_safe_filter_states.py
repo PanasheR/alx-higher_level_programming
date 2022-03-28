@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""script takes arguments and displays all values safe from injection
-"""
+"""takes arguments and displays all values safe from injection"""
 import MySQLdb
 from sys import argv
 
