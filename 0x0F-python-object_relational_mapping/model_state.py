@@ -9,9 +9,8 @@ Base = declarative_base()
 
 class City(Base):
     """class definition of a State and an instance Base"""
-    
-    __tablename__ = 'cities'
-    id = Column(Integer, autoincrement=True,
-                primary_key=True, unique=True, nullable=False)
+
+    __tablename__ = 'states'
+    id = Column(Integer, nullable=False, primary_key=True, unique=True,
+                autoincrement=True)
     name = Column(String(128), nullable=False)
-    state_id = Column(Integer, ForeignKey('states.id'), nullable=False)
