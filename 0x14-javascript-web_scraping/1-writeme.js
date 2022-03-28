@@ -1,10 +1,8 @@
 #!/usr/bin/node
-// Script displays get status
 
+const fs = require('fs');
 const arg = process.argv;
-const request = require('request');
-request(arg[2], function (error, response, body) {
-  if (error) {
-    console.log('error:', error);
-  } else console.log('code:', response && response.statusCode);
+
+fs.writeFile(arg[2], arg[3], 'utf-8', (err, data) => {
+  if (err) { console.log(err); }
 });
