@@ -1,18 +1,20 @@
 #!/usr/bin/python3
 """takes arguments and displays all values safe from injection"""
-import MySQLdb
-from sys import argv
 
 if __name__ == "__main__":
-    db = MySQLdb.connect(host="localhost",
-                         port=3306,
-                         user=argv[1],
-                         passwd=argv[2],
-                         db=argv[3])
-    cur = db.cursor()
-    cur.execute("SELECT * FROM states WHERE name = %s", (argv[4],))
-    rows = cur.fetchall()
-    for row in rows:
+    import MySQLdb
+    from sys import argv
+
+    connection = MySQLdb.connect(host="localhost",
+                                 port=3306,
+                                 user=argv[1],
+                                 passwd=argv[2],
+                                 db=argv[3])
+    cursor = connection.cursor()
+    cursor.execute("SELECT * FROM states WHERE BINARY name='{}'ORDER BY id ASC"
+                   .format(argv[4]))
+    query_rows = cursor.fetchall()
+    for row in query_rows:
         print(row)
-    cur.close()
-    db.close()
+    cursor.close()
+    connection.close()
