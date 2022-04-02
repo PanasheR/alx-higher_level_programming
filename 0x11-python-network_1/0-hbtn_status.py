@@ -3,7 +3,7 @@
 from urllib.request import urlopen
 
 if __name__ == "__main__":
-    with urlopen('https://alx-intranet.hbtn.io/status') as res:
+    with urlopen('https://intranet.hbtn.io/status') as res:
         content = res.read()
         print("Body response:")
         print("\t- type: {}".format(type(content)))
